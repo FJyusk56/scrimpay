@@ -19,6 +19,6 @@ class Service(models.Model):
     # 解約金 : int型
     cancelfee = models.IntegerField()
     # 未使用分の返金 : int型
-    refund = models.IntegerField()rim
+    refund = models.IntegerField()
     # 備考(解約時の補償など) : char型
     note = models.CharField(max_length=200)
