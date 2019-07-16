@@ -25,7 +25,11 @@ SECRET_KEY = '@z#wp#-pqyltr+@)l4oh^g!$!vpi)rcdtk99o#%ieh%srcyosv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["3.17.176.153", "ec2-3-17-176-153.us-east-2.compute.amazonaws.com"]
+ALLOWED_HOSTS = [
+    "3.17.176.153",
+    "ec2-3-17-176-153.us-east-2.compute.amazonaws.com",
+    "127.0.0.1",
+    ]
 
 
 # Application definition
