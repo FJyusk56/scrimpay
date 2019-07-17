@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'scrimpay_app',
     'scrimpay_app.apps.ScrimpayAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
