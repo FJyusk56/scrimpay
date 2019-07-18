@@ -13,9 +13,20 @@
         ScrimPay
     </h1>
 
+    
+
     <div class="service_all">
+
+        <!-- {% for u in val %}
+            <div>ユーザID : {{u.userid}}</div>
+            <div>ユーザ名 : {{u.username}}</div>
+        {% endfor %}
+
+        <br>
+        <br> -->
         <div class="container">
-            <div class="service">
+
+            <!-- <div class="service">
                 <div class="name">Spotify</div>
 
                 <div class="price">
@@ -60,11 +71,33 @@
 
                 </div>
 
+            </div>  -->
+
+
+
+            {% for i in val %}
+            <div class="service">
+                <div class="name">{{i.servicename}}</div>
+    
+                <div class="price">
+                    <div class="plan">
+                        {{i.serviceid}}
+                    </div>
+                    {{i.price}}
+                </div>
+                <div class="cancel">
+    
+                </div>
+                
             </div>
+            {% endfor %}
+            
+
 
 
         </div>
     </div>
+
     
 </body>
 </html>

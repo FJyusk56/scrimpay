@@ -9,6 +9,9 @@ class User(models.Model):
     # パスワード : char型
     password = models.CharField(max_length=16)
 
+    def __str__(self):
+        return '<id:' + str(self.userid) + ',' + self.username + '>'
+
 class Service(models.Model):
     # サービスID : int型 主キー
     serviceid = models.IntegerField(primary_key=True)
@@ -22,3 +25,6 @@ class Service(models.Model):
     refund = models.IntegerField()
     # 備考(解約時の補償など) : char型
     note = models.CharField(max_length=200)
+
+    def __str__(self):
+        return '<id' + str(self.serviceid) + ',' + self.servicename + '>'
